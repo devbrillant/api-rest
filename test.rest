@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/notes
+
+###
+
+POST http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "title": "Nouvelle note",
+  "content": "Ceci est une nouvelle note."
+}
+
+###
+
+PATCH http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Titre modifié",
+  "content": "Contenu modifié."
+}
+
+
+###
+DELETE http://localhost:3000/api/notes
+Content-Type: application/json
+
+{
+  "id": 1
+}
+
